@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+<marquee height="20px" bgcolor="white">
+    Are you ready to share some goodness, some Badness........ Now just go down
+    </marquee>
+
+
+	<style type="text/css">
+
+			body{
+					background-image: url(img/3.JPG);
+					background-size: cover;
+					background-attachment:fixed;
+
+			}
+			.content{
+				background: red;
+				width: 50px;
+				padding: 10px;
+				margin: 25px auto;
+				font-family: calibri;
+			}
+        #st1
+{
+	color:white;
+	font-family: monospace;
+	height:20px;
+        }
+
+	</style>
+<script>
+function validateForm() 
+{
+  var x = document.forms["myForm"]["Firstname"].value;
+  var a = document.forms["myForm"]["Fonnumber"].value;
+
+  if (x == "")
+   {
+    alert("Name must be filled out");
+    return false;
+   }
+
+  if(a.length!=10)
+  {
+  	alert("Number should be of 10 digit only");
+  	return false;
+  }  
+}
+</script>
+</head>
+
+
+<body>
+
+
+
+
+<form align="center" name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
+
+    <h3 id="st1">Full Name :-<input type="text" name="Firstname"></h3>
+	<h3 id="st1">Zodaic sign :-<input type="text" name="Zsign"></h3>
+	<h3 id="st1">phonenumber :-<input type="text" name="Fonnumber"></h3>
+
+    <h3 id="st1"><p style="margin-left:4.5em">3 Fears :-<input type="text" name="fear"></p></h3>
+    <h3 id="st1"><p style="margin-left:4.5em">Your Nick name :-<input type="text" name="under"></p></h3>
+    <h3 id="st1"><p style="margin-left:4.5em">Insta Username :-<input type="text" name="under"></p></h3>
+
+    <h3 id="st1">Current relationahip status :-<input type="text" name="under"></h3>
+    <h3 id="st1">Sometimes i'm talented at :-<input type="text" name="talent"></h3>
+    <h3 id="st1">Celebrity Crush :-<input type="text" name="crush"></h3>
+
+    <h3 id="st1"><p style="margin-left:4.5em">3 Things that makes you happy :-<input type="text" name="happy"></p></h3>
+        <h3 id="st1"><p style="margin-left:4.5em">Fav place to visit :-<input type="text" name="food"></p></h3>
+    <h3 id="st1"><p style="margin-left:4.5em">Fav person to stay with :-<input type="text" name="movie"></p></h3>
+
+	<center><input type="submit" value="Done"></center>
+
+</form>
+</body>
+</html>

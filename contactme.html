@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<style>
+
+body 
+{
+background-image:url('img/mountains.jpeg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+h1{
+    color: blue;
+    font-family:serif;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 
+    50px;
+
+}
+h3
+{
+  color: red;
+  font-family: sans-serif;
+  margin-left:150px;
+}
+h4{
+  color:brown;
+  font-family: Arial;
+  margin-left: 150px;
+}
+
+
+#insta
+{
+  color: chocolate;
+ margin-left: 500px;
+}
+
+#git
+{
+  color:chocolate;
+  margin-left: 50px;
+}
+
+#linked
+{
+  color:chocolate;
+  margin-left: 500px;
+
+}
+
+#whats
+{
+  color:chocolate;
+  margin-left: 50px;
+}
+
+</style>
+<body>
+    <div class="container">
+  <ul class="list-inline">
+    <li><a id="insta" href="#" data-toggle="tooltip" data-placement="tooltip" title="abhishek10">Instagram</a></li>
+    <li><a id="git" href="#" data-toggle="tooltip" data-placement="tooltip" title="abhishek.b.s">github</a></li>
+    
+    <li><a id="linked" href="#" data-toggle="tooltip" data-placement="tooltip" title="Abhishek Satpute">LinkedIn</a></li>
+    <li><a id="whats" href="#" data-toggle="tooltip" data-placement="tooltip" title="Ping Me You have my number">Whatsaap</a></li>
+  </ul>
+</div>
+<p class="text-center">
+   <h1>Get in Touch</h1>  
+    <h4>If you have anything to say, feel free to ask .IF you didnt got the reply, i might just be busy in my office work</h4>
+   <h4> But i ll soon get back to you as soon as possible</h4>
+   <h4>Thats a promise</h4>
+   <h3>Find Abhishek Here</h3>
+    </p>
+
+
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+</body>
+</html>
